@@ -1,0 +1,8 @@
+type RateMeUser {
+	username: String!
+}
+
+type Rating {
+	ratee: String!
+	rating: Float!
+}

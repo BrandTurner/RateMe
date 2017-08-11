@@ -1,0 +1,77 @@
+body {
+  color: #5d3571;
+  cursor: default;
+  font-family: Roboto,sans-serif;
+  font-size: 34px;
+  font-weight: 300px;
+  text-align: center
+}
+
+App {
+	text-align: center;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 80px;
+}
+
+.App-header {
+	background-color: #222;
+	height: 150px;
+	padding: 20px;
+	color: white;
+}
+
+.App-intro {
+	font-size: large;
+}
+
+html,
+body,
+.container {
+	height: 100%;
+}
+
+.container {
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+
+  background: linear-gradient(135deg, #f4e9e9, #ebc8bf);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.phone-container {
+	background-size: cover;
+	background-color: rgb(253, 191, 174);
+	background-image: url(https://rateme.social/assets/e49cfd556aec13fb15a866006ea5a645.png);
+	color: rgb(93, 53, 113);
+	font-family: Roboto, sans-serif;
+	font-size: 34px;
+	font-weight: 300;
+	height: 588px;
+	width: 328px;
+	text-align: center;
+	line-height: 1.15;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone-screen {
+  width: 100%;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

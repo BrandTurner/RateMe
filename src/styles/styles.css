@@ -1,0 +1,21 @@
+.tip {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition-property: color, text-shadow;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: initial, initial;
+  transition-delay: initial, initial;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+}
+
+.tip img {
+  display: block;
+  width: 100%;
+  border-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
