@@ -21,7 +21,7 @@ class RateFriend extends React.Component {
 	// TODO Fade out
 	componentWillEnter(callback) {
 		const element = ReactDOM.findDOMNode(this);
-		Velocity(element, { translateY: ['0%', '-100%'] }, 1000).then(callback);
+		Velocity(element, { translateY: ['0%', '-500%'] }, 1000).then(callback);
 	}
 
 	componentWillLeave(callback) {
@@ -58,11 +58,11 @@ class RateFriend extends React.Component {
 					value={this.state.rating}
 					half={false}
 					color2="#e862e4"
-					size="40px"
+					size={40}
 					onChange={e => this.setState({ rating: e })}
 				/>
-        <input
-          className="input"
+				<input
+					className="input"
 					placeholder="Message (optional)"
 					value={this.state.message}
 					onChange={e => this.setState({ message: e.target.value })}

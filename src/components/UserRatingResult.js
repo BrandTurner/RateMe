@@ -12,7 +12,8 @@ export class UserRatingResult extends Component {
 		};
 
 		this.getRating = this.getRating.bind(this);
-		this.getAverageRating = this.getAverageRating.bind(this);
+    this.getAverageRating = this.getAverageRating.bind(this);
+    this.handleClick = this.handleClick.bind(this);
 	}
 
 	componentWillEnter(callback) {
@@ -56,7 +57,12 @@ export class UserRatingResult extends Component {
     }
 
 		return ratingTotal / this.props.data.allRatings.length;
-	}
+  }
+
+  handleClick() {
+    this.props.reset();
+    console.log('rarrrr')
+  }
 
 	render() {
 		console.log('Props', this.props);
@@ -72,7 +78,7 @@ export class UserRatingResult extends Component {
     const avg = this.getAverageRating()
 		return (
       <div>
-      <button onClick={this.props.reset}>
+      <button onClick={this.handleClick}>
         Reset
       </button>
 				<p>

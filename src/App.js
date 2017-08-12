@@ -12,9 +12,23 @@ import ReactTransitionGroup from 'react-addons-transition-group';
 import { gql, graphql, ApolloProvider } from 'react-apollo';
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 
+import styled from 'styled-components';
+
 const client = new ApolloClient({
 	networkInterface: createNetworkInterface('https://api.graph.cool/simple/v1/cj64w3l7dz5qy01536qrubup0'),
 });
+
+const Container = styled.div`
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		align-items: center;
+
+		background: linear-gradient(135deg, #f4e9e9, #ebc8bf);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+`;
 
 class App extends Component {
 	constructor(props, context) {
@@ -129,6 +143,7 @@ class App extends Component {
 										ratee={this.state.ratee}
 										rating={this.state.rating}
 										message={this.state.message}
+										reset={this.resetRateMe}
 									/>}
 								{this.state.getUserRating &&
 									<GetUserRating
@@ -144,6 +159,7 @@ class App extends Component {
 							</ReactTransitionGroup>
 						</div>
 					</div>
+					<div className="phone-bevel" />
 				</div>
 			</ApolloProvider>
 		);

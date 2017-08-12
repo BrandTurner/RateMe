@@ -1,6 +1,10 @@
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import Velocity from 'velocity-animate';
+import './Intro.css'
+import styled from 'styled-components';
+
+
 
 class Intro extends React.Component {
 	constructor(props) {
@@ -19,10 +23,10 @@ class Intro extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<a onClick={this.props.handleClick}>Rate a Friend</a>
-				<hr />
-				<a onClick={this.props.getUserRatingClick}>Get Your Rating</a>
+			<div className='intro-screen'>
+				<a className="links" onClick={this.props.handleClick}>Rate a Friend</a>
+				<div className='line'></div>
+				<a className="links" onClick={this.props.getUserRatingClick}>Get Your Rating</a>
 			</div>
 		);
 	}
