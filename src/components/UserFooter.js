@@ -4,8 +4,7 @@ import rate_me_footer from '../assets/rate_me_footer.jpg';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
-  position: absolute;
-  top 532px;
+	margin-top: 26px;
 	width: 100%;
 	transition-property: color, text-shadow;
 	transition-duration: 0.5s, 0.5s;
@@ -25,7 +24,7 @@ const FooterImage = styled.img`
 `;
 
 //TODO turn into stateless fuctional component;
-export class Footer extends Component {
+export class UserFooter extends Component {
 	render() {
 		return (
 			<FooterContainer>
@@ -35,4 +34,4 @@ export class Footer extends Component {
 	}
 }
 
-export default Footer;
+export default UserFooter;

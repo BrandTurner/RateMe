@@ -125,7 +125,7 @@ class App extends Component {
 				<div className="container">
 					<div className="phone-container">
 						<div className="phone-screen">
-							<ReactTransitionGroup>
+							<ReactTransitionGroup className="crap">
 								{this.state.start &&
 									<Intro
 										handleClick={this.rateFriendClick}
@@ -138,7 +138,6 @@ class App extends Component {
 									/>}
 								{this.state.ratingSubmitted &&
 									<Rating
-										handleRestart={this.handleRestart}
 										rater={this.state.rater}
 										ratee={this.state.ratee}
 										rating={this.state.rating}
